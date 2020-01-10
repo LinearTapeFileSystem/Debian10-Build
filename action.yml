@@ -1,0 +1,16 @@
+# action.yml
+name: 'Build Check'
+description: 'Build check of the LTFS package'
+inputs:
+  destination:  # id of input
+    description: 'destination directory'
+    required: true
+    default: '/tmp/ltfs'
+outputs:
+  time: # id of output
+    description: 'Finish build check of the LTFS package'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.destination }}
