@@ -15,7 +15,7 @@ None
 ## Usage
 
 ```
-uses: LinearTapeFileSystem/Debian10-Build@v1.0
+uses: LinearTapeFileSystem/Debian10-Build@v1.1
 with:
   destination: '/tmp/ltfs'
 ```
